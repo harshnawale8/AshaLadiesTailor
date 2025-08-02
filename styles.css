@@ -141,8 +141,8 @@ body {
 
 .btn-hero {
     background: rgba(255, 255, 255, 0.1);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--primary);
+    border: 1px solid var(--primary);
     backdrop-filter: blur(10px);
 }
 
@@ -339,7 +339,7 @@ body {
 
 /* About Section */
 .about-section {
-    padding: 5rem 0;
+    padding: 3rem 0;
     background: var(--gradient-soft);
 }
 
@@ -452,7 +452,7 @@ body {
 
 /* Gallery Section */
 .gallery-section {
-    padding: 5rem 0;
+    padding: 3rem 0;
     background: var(--background);
 }
 
@@ -604,7 +604,7 @@ body {
 
 /* Services Section */
 .services-section {
-    padding: 5rem 0;
+    padding: 3rem 0;
     background: var(--gradient-soft);
 }
 
@@ -765,7 +765,7 @@ body {
 
 /* Testimonials Section */
 .testimonials-section {
-    padding: 5rem 0;
+    padding: rem 0;
     background: var(--background);
 }
 
@@ -889,7 +889,7 @@ body {
 
 /* Contact Section */
 .contact-section {
-    padding: 5rem 0;
+    padding: 3rem 0;
     background: var(--gradient-soft);
 }
 
@@ -1040,7 +1040,7 @@ body {
 .footer {
     background: var(--foreground);
     color: var(--background);
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 
 .footer-content {
@@ -1296,7 +1296,7 @@ body {
 /* Responsive adjustments */
 @media (max-width: 640px) {
     .container {
-        padding: 0 0.5rem;
+        padding: 0 1.75rem;
     }
     
     .hero-content {
