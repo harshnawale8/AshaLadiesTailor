@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asha Tailor - Elegant Blouses, Perfect Fit</title>
+    <meta name="description" content="Professional ladies' blouse stitching service. Custom designs, bridal blouses, and perfect alterations. Trusted by women for over a decade.">
+    <meta name="author" content="Asha Tailor">
+    
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i data-lucide="heart" class="icon-small fill-primary text-primary"></i>
+                <span>Trusted by Women Since 2014</span>
+            </div>
+            
+            <h1 class="hero-title">
+                Asha <span class="text-primary">Tailor</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                Elegant Blouses. Perfect Fit. Trusted by Women.
+            </p>
+            
+            <p class="hero-description">
+                Experience the artistry of custom tailoring with over a decade of expertise in creating beautiful, perfectly fitted blouses for every occasion.
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-elegant" onclick="scrollToSection('gallery')">
+                    View Our Designs
+                    <i data-lucide="arrow-right" class="icon-small"></i>
+                </button>
+                
+                <button class="btn btn-hero" onclick="scrollToSection('contact')">
+                    Get in Touch
+                </button>
+            </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="hero-decoration decoration-1"></div>
+        <div class="hero-decoration decoration-2"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    About <span class="text-primary">Asha Tailor</span>
+                </h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="text-large">
+                        <span class="text-primary font-semibold">Asha Tailor</span> is a premier ladies tailoring service, 
+                        renowned for delivering beautifully stitched blouses with unmatched precision and elegance.
+                    </p>
+                    
+                    <p class="text-large">
+                        For over a decade, we have been creating stunning blouses that celebrate the beauty and 
+                        individuality of every woman. From everyday wear to exquisite bridal designs, we bring 
+                        a personal touch to every stitch.
+                    </p>
+                    
+                    <p class="text-large">
+                        Our commitment to quality craftsmanship, attention to detail, and personalized service 
+                        has made us the trusted choice for women who value elegance and perfect fit.
+                    </p>
+
+                    <div class="promise-card">
+                        <h3 class="promise-title">Our Promise</h3>
+                        <p class="promise-text">
+                            "Every blouse we create is a work of art, designed to make you feel confident, 
+                            beautiful, and perfectly you."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="src/assets/tailor-workspace.jpg" alt="Asha Tailor at work in her studio" class="workspace-image">
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="heart" class="icon-medium text-white"></i>
+                    </div>
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="users" class="icon-medium text-white"></i>
+                    </div>
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="award" class="icon-medium text-white"></i>
+                    </div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="scissors" class="icon-medium text-white"></i>
+                    </div>
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Blouses Crafted</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Our <span class="text-primary">Creations</span>
+                </h2>
+                <p class="section-description">
+                    Discover our exquisite collection of handcrafted blouses, each designed with 
+                    passion and tailored to perfection.
+                </p>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Designs</button>
+                <button class="filter-btn" data-filter="classic">Classic</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="festive">Festive</button>
+                <button class="filter-btn" data-filter="daily">Daily Wear</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="classic">
+                    <img src="src/assets/blouse-1.jpg" alt="Classic Silk Blouse" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Classic Silk Blouse</h3>
+                        <p class="gallery-description">Elegant silk blouse with intricate embroidery</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bridal">
+                    <img src="src/assets/blouse-2.jpg" alt="Bridal Masterpiece" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Bridal Masterpiece</h3>
+                        <p class="gallery-description">Luxurious bridal blouse with heavy beadwork</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="daily">
+                    <img src="src/assets/blouse-3.jpg" alt="Everyday Elegance" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Everyday Elegance</h3>
+                        <p class="gallery-description">Modern casual blouse for daily wear</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="festive">
+                    <img src="src/assets/blouse-4.jpg" alt="Festive Glory" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Festive Glory</h3>
+                        <p class="gallery-description">Vibrant festive blouse with mirror work</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="gallery-cta">
+                <h3 class="cta-title">Love What You See?</h3>
+                <p class="cta-description">
+                    Let's create something beautiful together. Contact us to discuss your dream blouse design.
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/8669593756" target="_blank" class="btn btn-primary">
+                        Message on WhatsApp
+                    </a>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        Send Inquiry
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Our <span class="text-primary">Services</span>
+                </h2>
+                <p class="section-description">
+                    From custom designs to expert alterations, we offer comprehensive tailoring services 
+                    to meet all your blouse needs.
+                </p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="scissors" class="icon-large text-white"></i>
+                    </div>
+                    <h3 class="service-title">Custom Blouse Stitching</h3>
+                    <p class="service-description">
+                        Personalized blouses crafted to your exact measurements and style preferences.
+                    </p>
+                    <ul class="service-features">
+                        <li><span class="feature-dot"></span>Perfect fit guarantee</li>
+                        <li><span class="feature-dot"></span>Choice of fabrics</li>
+                        <li><span class="feature-dot"></span>Custom designs</li>
+                        <li><span class="feature-dot"></span>Expert craftsmanship</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="crown" class="icon-large text-white"></i>
+                    </div>
+                    <h3 class="service-title">Bridal Blouse Design</h3>
+                    <p class="service-description">
+                        Exquisite bridal blouses with intricate work for your special day.
+                    </p>
+                    <ul class="service-features">
+                        <li><span class="feature-dot"></span>Heavy embroidery</li>
+                        <li><span class="feature-dot"></span>Beadwork & sequins</li>
+                        <li><span class="feature-dot"></span>Traditional & modern styles</li>
+                        <li><span class="feature-dot"></span>Bridal consultation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="refresh-cw" class="icon-large text-white"></i>
+                    </div>
+                    <h3 class="service-title">Blouse Alteration & Fitting</h3>
+                    <p class="service-description">
+                        Perfect alterations to ensure your existing blouses fit like they were made for you.
+                    </p>
+                    <ul class="service-features">
+                        <li><span class="feature-dot"></span>Size adjustments</li>
+                        <li><span class="feature-dot"></span>Style modifications</li>
+                        <li><span class="feature-dot"></span>Repair services</li>
+                        <li><span class="feature-dot"></span>Quick turnaround</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="palette" class="icon-large text-white"></i>
+                    </div>
+                    <h3 class="service-title">Design Consultation</h3>
+                    <p class="service-description">
+                        Expert advice on styles, fabrics, and designs that complement your body type.
+                    </p>
+                    <ul class="service-features">
+                        <li><span class="feature-dot"></span>Style guidance</li>
+                        <li><span class="feature-dot"></span>Fabric selection</li>
+                        <li><span class="feature-dot"></span>Color coordination</li>
+                        <li><span class="feature-dot"></span>Trend insights</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Process Section -->
+            <div class="process-section">
+                <h3 class="process-title">
+                    Our <span class="text-primary">Process</span>
+                </h3>
+                
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="process-number">1</div>
+                        <h4 class="process-step-title">Consultation</h4>
+                        <p class="process-step-description">
+                            Discuss your requirements, style preferences, and take precise measurements.
+                        </p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="process-number">2</div>
+                        <h4 class="process-step-title">Design & Create</h4>
+                        <p class="process-step-description">
+                            Our skilled artisans craft your blouse with attention to every detail.
+                        </p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="process-number">3</div>
+                        <h4 class="process-step-title">Final Fitting</h4>
+                        <p class="process-step-description">
+                            Final adjustments ensure the perfect fit and your complete satisfaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    What Our <span class="text-primary">Clients Say</span>
+                </h2>
+                <p class="section-description">
+                    Don't just take our word for it. Here's what our satisfied customers have to say 
+                    about their experience with Asha Tailor.
+                </p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i data-lucide="quote" class="icon-large text-primary opacity-10"></i>
+                    </div>
+                    
+                    <div class="stars">
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                    </div>
+                    
+                    <p class="testimonial-text">
+                        "Asha ji created the most beautiful bridal blouse for my wedding. The intricate work and perfect fit made me feel like a princess. I received so many compliments!"
+                    </p>
+                    
+                    <div class="client-info">
+                        <div class="client-avatar">P</div>
+                        <div class="client-details">
+                            <h4 class="client-name">Priya S.</h4>
+                            <p class="client-service">Bridal Blouse • Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i data-lucide="quote" class="icon-large text-primary opacity-10"></i>
+                    </div>
+                    
+                    <div class="stars">
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                    </div>
+                    
+                    <p class="testimonial-text">
+                        "The attention to detail is incredible. My blouse fits perfectly and the design is exactly what I envisioned. Asha Tailor truly understands women's needs."
+                    </p>
+                    
+                    <div class="client-info">
+                        <div class="client-avatar">A</div>
+                        <div class="client-details">
+                            <h4 class="client-name">Anjali R.</h4>
+                            <p class="client-service">Custom Design • Delhi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i data-lucide="quote" class="icon-large text-primary opacity-10"></i>
+                    </div>
+                    
+                    <div class="stars">
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                    </div>
+                    
+                    <p class="testimonial-text">
+                        "Quick turnaround and excellent quality. She transformed my old blouse into something completely new and beautiful. Highly recommend!"
+                    </p>
+                    
+                    <div class="client-info">
+                        <div class="client-avatar">M</div>
+                        <div class="client-details">
+                            <h4 class="client-name">Meera K.</h4>
+                            <p class="client-service">Alteration Service • Bangalore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="testimonials-cta">
+                <h3 class="cta-title-white">Ready to Join Our Happy Customers?</h3>
+                <p class="cta-description-white">
+                    Experience the same level of craftsmanship and personalized service that has 
+                    made our clients so happy.
+                </p>
+                <button class="btn btn-white" onclick="scrollToSection('contact')">
+                    Start Your Journey
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Get in <span class="text-primary">Touch</span>
+                </h2>
+                <p class="section-description">
+                    Ready to create your perfect blouse? Contact us today for a consultation and 
+                    let's bring your vision to life.
+                </p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3 class="form-title">Send us a Message</h3>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Required</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="Custom Blouse Stitching">Custom Blouse Stitching</option>
+                                <option value="Bridal Blouse Design">Bridal Blouse Design</option>
+                                <option value="Blouse Alteration">Blouse Alteration & Fitting</option>
+                                <option value="Design Consultation">Design Consultation</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your requirements, preferred style, occasion, etc."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-elegant btn-full">
+                            <i data-lucide="message-circle" class="icon-small"></i>
+                            Send via WhatsApp
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-info-card" onclick="window.open('https://maps.google.com', '_blank')">
+                        <div class="contact-icon">
+                            <i data-lucide="map-pin" class="icon-medium text-white"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-title">Visit Our Studio</h4>
+                            <p>123 Fashion Street</p>
+                            <p>Mumbai, Maharashtra</p>
+                            <p>400001</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card" onclick="window.open('tel:+8669593756')">
+                        <div class="contact-icon">
+                            <i data-lucide="phone" class="icon-medium text-white"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-title">Call Us</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card" onclick="window.open('mailto:info@ashatailor.com')">
+                        <div class="contact-icon">
+                            <i data-lucide="mail" class="icon-medium text-white"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-title">Email Us</h4>
+                            <p>info@ashatailor.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i data-lucide="clock" class="icon-medium text-white"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-title">Working Hours</h4>
+                            <p>Mon - Sat: 10AM - 7PM</p>
+                            <p>Sunday: By Appointment</p>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.7751!2d72.8777!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzMzLjYiTiA3MsKwNTInMzkuNyJF!5e0!3m2!1sen!2sin!4v8080920232"
+                            width="100%"
+                            height="100%"
+                            style="border: 0;"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Asha Tailor Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <h3 class="footer-brand-title">
+                        Asha <span class="text-primary">Tailor</span>
+                        <i data-lucide="heart" class="icon-small text-primary fill-primary"></i>
+                    </h3>
+                    <p class="footer-brand-description">
+                        Creating beautiful, perfectly fitted blouses with over a decade of expertise. 
+                        Every stitch tells a story of elegance and craftsmanship.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/8080920232" target="_blank" class="social-link">
+                            <i data-lucide="message-circle" class="icon-small"></i>
+                        </a>
+                        <a href="https://instagram.com/ashatailor" target="_blank" class="social-link">
+                            <i data-lucide="instagram" class="icon-small"></i>
+                        </a>
+                        <a href="tel:+919876543210" class="social-link">
+                            <i data-lucide="phone" class="icon-small"></i>
+                        </a>
+                        <a href="mailto:info@ashatailor.com" class="social-link">
+                            <i data-lucide="mail" class="icon-small"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><button onclick="scrollToSection('about')">About Us</button></li>
+                        <li><button onclick="scrollToSection('gallery')">Our Work</button></li>
+                        <li><button onclick="scrollToSection('services')">Services</button></li>
+                        <li><button onclick="scrollToSection('testimonials')">Testimonials</button></li>
+                        <li><button onclick="scrollToSection('contact')">Contact</button></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Our Services</h4>
+                    <ul class="footer-services">
+                        <li>Custom Blouse Stitching</li>
+                        <li>Bridal Blouse Design</li>
+                        <li>Blouse Alterations</li>
+                        <li>Design Consultation</li>
+                        <li>Quick Repairs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Asha Tailor. All rights reserved.</p>
+                <p class="made-with-love">
+                    Made with <i data-lucide="heart" class="icon-tiny text-primary fill-primary"></i> for beautiful blouses
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <div id="floatingWhatsApp" class="floating-whatsapp">
+        <div id="whatsappCard" class="whatsapp-card hidden">
+            <div class="whatsapp-header">
+                <h4>Asha Tailor</h4>
+                <button id="closeWhatsapp" class="close-btn">
+                    <i data-lucide="x" class="icon-tiny"></i>
+                </button>
+            </div>
+            <p class="whatsapp-message">
+                Hi! 👋 Need help with your blouse design? Chat with us on WhatsApp!
+            </p>
+            <button id="startChat" class="btn btn-primary btn-small">
+                Start Chat
+            </button>
+        </div>
+        
+        <button id="whatsappToggle" class="whatsapp-btn">
+            <i data-lucide="message-circle" class="icon-medium"></i>
+            <div class="pulse-ring"></div>
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
